@@ -4,9 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node productManager.js"
+    "start": "node productManager.js" 
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

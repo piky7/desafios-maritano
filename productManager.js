@@ -20,9 +20,10 @@ class ProductManager{
         }
       
         const codigoRepetido = this.productos.findIndex(product => product.code === code)
-     
+        
         if(codigoRepetido === -1){
             this.productos.push(productoNuevo)
+          
             console.log(productoNuevo)
            
             let newProductStr = JSON.stringify(this.productos, null, 2)
@@ -31,6 +32,7 @@ class ProductManager{
         }else{
             return "El producto ya se encuentra ingresado"
         }
+        
     }
 
     getProducts() {
@@ -106,3 +108,15 @@ class ProductManager{
     }
 }
 
+
+const productoUno = new ProductManager()
+
+
+
+
+
+
+productoUno.addProduct('Coca cola','Gaseosa','$1000','foto','007','5')
+productoUno.addProduct('Granola','Snack','$2500','foto','008','15')
+
+  
